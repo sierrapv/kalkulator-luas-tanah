@@ -1,0 +1,111 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(211, 204, 172);
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Gaya untuk navbar*/
+header {
+    background-color: rgb(241, 204, 134);
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgb(124, 105, 20);
+    position: fixed;
+    display: flex;
+    width: 100%;
+  }
+  
+   .ijiran{
+    position: fixed;
+    width: 90px;
+    height: auto;
+    left: 1200px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  nav li {
+    margin: 0 15px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(51, 47, 27);
+  }
+
+  nav a:hover {
+    background-color: rgb(207, 183, 104);
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  .scrolling-text {
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    color: rgb(70, 42, 7);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.Instagram{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  
+
+}
+.instagram {
+  width: 60px;
+  margin-right: 100px;
+}
+.email{
+  width: 60px;
+}
+
+footer {
+  background: #97904e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 100%;
+}
+
+footer p {
+  margin-top:0 ;
+}
+.beranda{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+  letter-spacing: 1px;
+}

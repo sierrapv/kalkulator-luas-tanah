@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="kalLUASTANAH2.css">
+</head>
+<body>
+    <header>
+        <img src="kalkulator.png" alt="logo" id="logo">
+    <nav>
+        <div class="scrolling-text">
+            Selamat Datang di Kalkulator Luas Tanah By Sierra Putri Valenci
+        </div>
+        <ul>
+            <li><a class="beranda" href="index.html">Beranda</a></li>
+            <li><a class="beranda" href="kalLUASTANAH2.html">Kalkulator</a></li>
+            <li><a class="beranda" href="kalLUASTANAH3.html">Saran</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br><br><br><br><br><br>
+    <h1>Kalkulator Luas Tanah</h1>
+    <div class="container">
+        <label for="panjang">Panjang Tanah dalam Satuan Meter:</label>
+        <input type="number" id="panjang">
+        <br>
+        <br>
+        <label for="lebar">Lebar Tanah dalam Satuan Meter:</label>
+        <input type="number" id="lebar">
+        <br>
+        <br>
+        <button onclick="hitungLuas()">Hitung Luas</button>
+        <br>
+        <h3>Luas Tanah: <span id="luasTanah"></span> m²</h3>
+    </div>
+    <button id="reset-btn" onclick="resetHasil()">Hapus</button><br>
+    <a href="index.html">
+        <button>Kembali</button>
+    </a>
+    <footer>
+        <p>&copy; 2023 Sierra. Hak cipta dilindungi oleh Yang Maha Kuasa.</p>
+      </footer>
+    <script>
+    function hitungLuas() {
+    // Dapatkan nilai panjang dan lebar dari input
+    var panjang = parseFloat(document.getElementById('panjang').value);
+    var lebar = parseFloat(document.getElementById('lebar').value);
+
+    // Hitung luas tanah
+    var luas = panjang * lebar;
+
+    // Tampilkan hasil di dalam elemen dengan id "luasTanah"
+    document.getElementById('luasTanah').textContent = luas.toFixed(2);}
+
+    function resetHasil() {
+        document.getElementById('panjang').value = '';
+        document.getElementById('lebar').value = '';
+        document.getElementById('luasTanah').textContent = '';
+        }
+    </script>
+    <br>
+</body>
+</html>
